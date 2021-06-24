@@ -1,8 +1,9 @@
 // IMPORT MODULES under test here:
-import { add } from '../calculator.js';
+import { add, hypotenuse } from '../calculator.js';
 import { subtract } from '../calculator.js';
 import { multiply } from '../calculator.js';
 import { divide } from '../calculator.js';
+import { modulo } from '../calculator.js';
 
 const test = QUnit.test;
 
@@ -64,6 +65,38 @@ test('test divide', (expect) => {
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = divide(3, 3); // use your function here
+
+    //Expect
+    // Make assertions about what is expected versus the actual result
+    expect.equal(actual, expected);
+});
+
+// modulo
+// name your test by what it is testing
+test('test modulo', (expect) => {
+    //Arrange
+    // Set up your arguments and expectations
+    const expected = 1;
+    
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const actual = modulo(10, 3); // use your function here
+
+    //Expect
+    // Make assertions about what is expected versus the actual result
+    expect.equal(actual, expected);
+});
+
+// hypotenuse
+// name your test by what it is testing
+test('test hypotenuse', (expect) => {
+    //Arrange
+    // Set up your arguments and expectations
+    const expected = 5;
+    
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const actual = hypotenuse(3, 4); // use your function here
 
     //Expect
     // Make assertions about what is expected versus the actual result

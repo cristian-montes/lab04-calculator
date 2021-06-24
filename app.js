@@ -4,6 +4,8 @@ import { add } from '../calculator.js';
 import { subtract } from '../calculator.js';
 import { multiply } from '../calculator.js';
 import { divide } from '../calculator.js';
+import { modulo } from '../calculator.js';
+import { hypotenuse } from './calculator.js';
 
 const inputGen1 = document.getElementById('inputGen1');
 const inputGen2 = document.getElementById('inputGen2');
@@ -46,7 +48,20 @@ submitBtn.addEventListener('click', () => {
         const answer = divide(divi1, divi2);
         genAnswer.textContent = answer;
         mathSing.textContent = '/';
+    } if (operation === 'modulo'){
+        const modu1 = Number(inputGen1.value);
+        const modu2 = Number(inputGen2.value);
+        const answer = modulo(modu1, modu2);
+        genAnswer.textContent = answer;
+        mathSing.textContent = '%';
+    } if (operation === 'hypotenuse'){
+        const a = Number(inputGen1.value);
+        const b = Number(inputGen2.value);
+        const answer = hypotenuse(a, b);
+        genAnswer.textContent = answer;
+        mathSing.textContent = '+';
     }
+    
 });
 
 
