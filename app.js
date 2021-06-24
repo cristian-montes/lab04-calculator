@@ -10,36 +10,44 @@ const inputGen2 = document.getElementById('inputGen2');
 const genAnswer = document.getElementById('genAnswer');
 const calcOptionBtn = document.getElementById('calc-option');
 const submitBtn = document.getElementById('submit-btn');
+const mathSing = document.getElementById('math-sign');
 
-const addOption = document.getElementById('add-op');
-const subtractOption = document.getElementById('subtract-op');
-const multiplyOption = document.getElementById('multiply-op');
-const divideOption = document.getElementById('devide-op');
-
+// const addOption = document.getElementById('add-op');
+// const subtractOption = document.getElementById('subtract-op');
+// const multiplyOption = document.getElementById('multiply-op');
+// const divideOption = document.getElementById('divide-op');
 
 
 submitBtn.addEventListener('click', () => {
+    let operation = calcOptionBtn.value;
 
-    if (addOption){
+
+    if (operation === 'add'){
+        mathSing.textContent = '+';
         const add1 = Number(inputGen1.value);
         const add2 = Number(inputGen2.value);
         const answer = add(add1, add2);
         genAnswer.textContent = answer;
-    } if (subtractOption){
+    } if (operation === 'subtract'){
         const subtract1 = Number(inputGen1.value);
         const subtract2 = Number(inputGen2.value);
         const answer = subtract(subtract1, subtract2);
         genAnswer.textContent = answer;
-    } if (multiplyOption){
+        mathSing.textContent = '-';
+    } if (operation === 'multiply'){
         const multi1 = Number(inputGen1.value);
         const multi2 = Number(inputGen2.value);
         const answer = multiply(multi1, multi2);
         genAnswer.textContent = answer;
-    } if (divideOption){
+        mathSing.textContent = '*';
+    } if (operation === 'divide'){
         const divi1 = Number(inputGen1.value);
         const divi2 = Number(inputGen2.value);
         const answer = divide(divi1, divi2);
         genAnswer.textContent = answer;
+        mathSing.textContent = '/';
     }
-
 });
+
+
+    
