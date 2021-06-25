@@ -8,15 +8,24 @@ body {
 
 main {
     padding: 30px;
+    margin: 0px 50px 0px 50px;
+    background-image: url('https://cdn.pixabay.com/photo/2017/02/13/08/54/brain-2062057_960_720.jpg');
+    background-image: cover;
 }
 
 header {
-    background-color: #A2D7D2;
+    background-color: #5882c4;
     height: 110px;
     padding: 0 30px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    margin: 0px 50px 0px 50px;
+    /* justify-content: space-between; */
+    /* background-image: url('https://cdn.pixabay.com/photo/2019/02/22/19/03/digits-4014181_960_720.jpg');
+    background-size: cover; */
+
+    
 }
 
 header img {
@@ -25,11 +34,106 @@ header img {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
+.math-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 footer {
-    background-color: #FAF0EA;
+    /* background-color: #FAF0EA; */
+    background-color: #5882c4;
+    margin: 0px 50px 0px 50px;
     padding: 10px;
 }
+
+#math-sing {
+    color: crimson;
+}
+/* START BUTTON */
+.button{
+    position:relative;
+    display:inline-block;
+    margin:20px;
+
+    color:white;
+  font-family:Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:36px;
+  text-align: center;
+  text-decoration:none;
+  background-color:#FFA12B;
+  display:block;
+  position:relative;
+  padding:20px 40px;
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+  .button:active{
+  top:10px;
+  background-color:#F78900;
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+}
+
+.button:after{
+    content:"";
+    height:100%;
+    width:100%;
+    padding:4px;
+    position: absolute;
+    bottom:-15px;
+    left:-4px;
+    z-index:-1;
+    background-color:#2B1800;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+  #inputGen1{
+    border: 2px solid red;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px red;
+
+  }
+
+  #inputGen2{
+    border: 2px solid red;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px red;
+    
+  }
+
+
+
+  #calc-option{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px 10px 0px 10px;
+  }
+
+  .signs{
+    margin: 0px 20px 0px 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color:rgb(26, 40, 145);
+  }

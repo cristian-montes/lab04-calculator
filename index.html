@@ -13,17 +13,22 @@
 
 <body>
     <header>
-        <h1>My App</h1>
-        <img src="assets/big-logo.png" ≈/>
+        <h1>The Calc Dude</h1>
     </header>
     
     <main>
-
+<section class="math-area"> 
       <input type="number" name="" id="inputGen1">
+      <div class="signs">
       <span id="math-sign">whatever</span>
+      </div>
       <input type="number" name="" id="inputGen2">
+      <div class="signs">
       <span>=</span>
-      <span id="genAnswer">?</span>
+    </div>
+    <div class="signs"> 
+      <span id="genAnswer"></span>
+    </div>
       <select id="calc-option">
         <option value="add" id="add-op">add</option>
         <option value="subtract" id="subtract-op">subtract</option>
@@ -32,13 +37,13 @@
         <option value="modulo" id='modulo-op'>modulo</option>
         <option value="hypotenuse" id='hypotenuse-op'>hypotenuse</option>
       </select>
-      <button id="submit-btn">submit</button>
-      <hr>
-      
+      <button href="#" class="button" id="submit-btn">submit</button>
+      <!-- <hr> -->
+    </section>
     </main>
 
     <footer>
-        &copy; 2021 Alchemy Code Lab
+        &copy; 2021 Cristian's Property
     </footer>
 
     <script type="module" src="./app.js"></script>
